@@ -114,7 +114,7 @@ class AuthController extends Controller
     public function refresh()
     {
         $array = ['error' => ''];
-        $token = auth()->refresh();
+        $token = auth()->refresh(); 
         $array['token'] = $token;
 
         return $array;
